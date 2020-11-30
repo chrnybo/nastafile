@@ -42,7 +42,7 @@ NIL
 "211"
 "15370 77 15453 gmane.lisp.lispworks.general
 "
-´´´
+
 
 ### Get a specific article
 ```
