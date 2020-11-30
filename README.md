@@ -13,7 +13,7 @@ git clone https://github.com/fade/cl-nntp.git
 
 ### Load the cl-nntp library in your listener
 ``` common-lisp
-(ql:quickload :cl-nntp)
+CL-USER> (ql:quickload :cl-nntp)
 ```
 
 ### Set cl-nntp as the package
@@ -33,4 +33,19 @@ NIL
 ### Set the current group
 ```
 (group "gmane.lisp.lispworks.general")
+-> group gmane.lisp.lispworks.general
+<- 200 news.gmane.io InterNetNews NNRP server INN 2.6.3 ready (posting ok)
+-> group gmane.lisp.lispworks.general
+<- 211 15370 77 15453 gmane.lisp.lispworks.general
+-> group gmane.lisp.lispworks.general
+<- 211 15370 77 15453 gmane.lisp.lispworks.general
+"211"
+"15370 77 15453 gmane.lisp.lispworks.general
+"
+´´´
 
+### Get a specific article
+```
+NNTP> (article *default-client* :article-number 77)
+
+```
