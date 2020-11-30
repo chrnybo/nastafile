@@ -32,7 +32,7 @@ NIL
 
 ### Set the current group
 ``` common-lisp
-(group "gmane.lisp.lispworks.general")
+NNTP> (group "gmane.lisp.lispworks.general")
 -> group gmane.lisp.lispworks.general
 <- 200 news.gmane.io InterNetNews NNRP server INN 2.6.3 ready (posting ok)
 -> group gmane.lisp.lispworks.general
